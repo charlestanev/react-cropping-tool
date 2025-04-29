@@ -1,0 +1,11 @@
+// Custom border styling for the cropping area
+.reactEasyCrop_CropArea {
+  border: 2px solid white !important;
+  border-radius: 2px !important;
+  box-sizing: border-box;
+}
+
+// Ensure crop controls appear above overlays
+.reactEasyCrop_CropArea .reactEasyCrop_Controls {
+  z-index: 10;
+}
