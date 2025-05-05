@@ -33,7 +33,9 @@ const App: React.FC = () => {
       return;
     }
 
-    const blob = await cropImage(imageUrl, croppedAreaPixels);
+    const padding = cropStyles[selectedStyle].padding;
+    const blob = await cropImage(imageUrl, croppedAreaPixels, padding);
+
     if (blob) {
       setCroppedBlob(blob);
       setShowCropper(false);
